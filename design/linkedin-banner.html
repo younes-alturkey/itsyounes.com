@@ -1,0 +1,104 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root{--bg:#050b16;--bg2:#0a1526;--ink:#e8eefb;--mute:#9fb0cc;--dim:#5f7295;--accent:#5ee6ff;--blue:#4f8cff}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1584px;height:396px;overflow:hidden;background:var(--bg)}
+  .b{position:relative;width:1584px;height:396px;overflow:hidden;font-family:Inter,system-ui,sans-serif;
+     background:
+       radial-gradient(520px 320px at 430px 200px,rgba(79,140,255,.20),transparent 70%),
+       radial-gradient(380px 260px at 640px 120px,rgba(94,230,255,.12),transparent 70%),
+       radial-gradient(600px 300px at 1350px 330px,rgba(79,140,255,.10),transparent 70%),
+       linear-gradient(180deg,#060d1b,#050b16)}
+  svg{position:absolute;inset:0}
+  .txt{position:absolute;left:940px;top:0;bottom:0;width:580px;display:flex;flex-direction:column;justify-content:center}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .eyebrow i{display:block;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent),0 0 28px rgba(94,230,255,.6)}
+  h1{font-size:70px;line-height:1.02;font-weight:800;letter-spacing:-.035em;color:var(--ink)}
+  h1 span{background:linear-gradient(90deg,#5ee6ff 0%,#4f8cff 60%,#8a7bff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  p{margin-top:20px;font-size:21px;line-height:1.4;color:var(--mute);font-weight:400}
+  p b{color:var(--ink);font-weight:500}
+  .row{margin-top:22px;display:flex;gap:10px;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--mute)}
+  .chip{padding:6px 11px;border:1px solid rgba(159,176,204,.22);border-radius:999px;background:rgba(10,21,38,.65)}
+  .chip.on{color:var(--accent);border-color:rgba(94,230,255,.4)}
+</style></head>
+<body><div class="b">
+<svg id="g" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#9fb0cc" opacity=".16"/></pattern>
+    <linearGradient id="fadeR" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#fff"/><stop offset=".62" stop-color="#fff" stop-opacity=".15"/><stop offset="1" stop-color="#fff" stop-opacity=".35"/></linearGradient>
+    <mask id="m"><rect width="1584" height="396" fill="url(#fadeR)"/></mask>
+    <linearGradient id="hot" x1="0" x2="1"><stop offset="0" stop-color="#4f8cff"/><stop offset="1" stop-color="#5ee6ff"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="1584" height="396" fill="url(#dots)"/>
+  <g id="net" mask="url(#m)"></g>
+</svg>
+<div class="txt">
+  <div class="eyebrow"><i></i>Agentic systems · Engineering teams</div>
+  <h1><span>AI-Native</span><br>Engineering Lead</h1>
+  <p>I lead engineering teams and <b>build AI agents that ship.</b></p>
+  <div class="row"><span class="chip on">itsyounes.com</span><span class="chip">LLM agents</span><span class="chip">Platform engineering</span><span class="chip">Riyadh</span></div>
+</div>
+</div>
+<script>
+// seeded random so the banner renders the same every time
+let s=7;const r=()=>(s=(s*16807)%2147483647)/2147483647;
+const NS='http://www.w3.org/2000/svg',net=document.getElementById('net');
+const el=(t,a,p=net)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
+
+// flowing data streams behind everything
+for(let i=0;i<7;i++){
+  const y0=60+i*46,amp=14+r()*22,ph=r()*6.28,f=.004+r()*.003;let d='';
+  for(let x=-20;x<=1604;x+=12){const y=y0+Math.sin(x*f+ph)*amp+Math.sin(x*f*2.3+ph)*amp*.35;d+=(x<0?'M':'L')+x+' '+y.toFixed(1)}
+  el('path',{d,fill:'none',stroke:i%2?'#4f8cff':'#5ee6ff','stroke-width':1,opacity:.07+r()*.06});
+}
+
+// layered neural network
+const cols=[60,190,320,450,580,710,840],layers=cols.map((x,ci)=>{
+  const n=[4,6,7,8,7,5,3][ci],gap=300/(n-1)*(n>3?1:.7),top=198-gap*(n-1)/2;
+  return Array.from({length:n},(_,j)=>({x:x+(r()-.5)*24,y:top+j*gap+(r()-.5)*14}));
+});
+const edges=[];
+for(let l=0;l<layers.length-1;l++)for(const a of layers[l])for(const b of layers[l+1])if(r()<.55)edges.push([a,b,l]);
+const curve=(a,b)=>{const mx=(a.x+b.x)/2;return `M${a.x} ${a.y} C${mx} ${a.y} ${mx} ${b.y} ${b.x} ${b.y}`};
+for(const [a,b] of edges)el('path',{d:curve(a,b),fill:'none',stroke:'#9fb0cc','stroke-width':.7,opacity:.13});
+
+// a few "active" reasoning paths lit up end to end
+const lit=new Set();
+for(let p=0;p<3;p++){
+  let cur=layers[0][Math.floor(r()*layers[0].length)];lit.add(cur);
+  for(let l=1;l<layers.length;l++){
+    const ty=cur.y*.45+198*.55+(r()-.5)*170;
+    const nx=layers[l].slice().sort((u,v)=>Math.abs(u.y-ty)-Math.abs(v.y-ty))[0];
+    const d=curve(cur,nx);
+    el('path',{d,fill:'none',stroke:'url(#hot)','stroke-width':5,opacity:.25,filter:'url(#soft)'});
+    el('path',{d,fill:'none',stroke:'url(#hot)','stroke-width':1.6,opacity:.9});
+    // a pulse travelling along the path
+    if(r()<.6){const pe=el('path',{d,fill:'none',stroke:'#e8faff','stroke-width':2.4,'stroke-linecap':'round',opacity:.95,filter:'url(#glow)'});const L=pe.getTotalLength();pe.setAttribute('stroke-dasharray',`${L*.18} ${L}`);pe.setAttribute('stroke-dashoffset',-(L*(.3+r()*.5)))}
+    lit.add(nx);cur=nx;
+  }
+}
+for(const layer of layers)for(const n of layer){
+  const on=lit.has(n);
+  if(on)el('circle',{cx:n.x,cy:n.y,r:11,fill:'#5ee6ff',opacity:.18,filter:'url(#soft)'});
+  el('circle',{cx:n.x,cy:n.y,r:on?4.6:3.2,fill:on?'#5ee6ff':'#0a1526',stroke:on?'#bff6ff':'#5f7295','stroke-width':on?1.2:1,filter:on?'url(#glow)':''});
+}
+
+// tiny agent-trace labels next to the active output
+const mono={'font-family':'JetBrains Mono,monospace','font-size':11,fill:'#5f7295'};
+const tags=[['plan()',236,24],['tool_call: research',330,372],['reflect → act',560,40],['tokens → decisions',700,372]];
+for(const [t,x,y] of tags){const e=el('text',{...mono,x,y});e.textContent=t}
+
+// hex circuit motif on the far right edge, very faint
+const hx=(cx,cy,R)=>{let d='';for(let k=0;k<6;k++){const a=Math.PI/3*k+Math.PI/6;d+=(k?'L':'M')+(cx+R*Math.cos(a)).toFixed(1)+' '+(cy+R*Math.sin(a)).toFixed(1)}return d+'Z'};
+const svg=document.getElementById('g');
+for(let i=0;i<5;i++)for(let j=0;j<6;j++){
+  const cx=1460+i*42+(j%2)*21,cy=-10+j*36;
+  el('path',{d:hx(cx,cy,20),fill:'none',stroke:'#4f8cff','stroke-width':.8,opacity:(.05+r()*.1)*(1-j/7)},svg);
+}
+</script>
+</body></html>
