@@ -13,7 +13,10 @@ export function generateStaticParams() {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#050b16',
+  themeColor: [
+    { media: '(prefers-color-scheme: dark)', color: '#050b16' },
+    { media: '(prefers-color-scheme: light)', color: '#050b16' },
+  ],
   colorScheme: 'dark',
   width: 'device-width',
   initialScale: 1,
@@ -41,6 +44,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     alternates: {
       canonical: url,
       languages: { en: abs('/en'), ar: abs('/ar'), 'x-default': abs('/en') },
+      types: { 'text/plain': abs('/llms.txt') },
     },
     openGraph: {
       type: 'profile',

@@ -43,5 +43,5 @@ export function middleware(req: NextRequest) {
 
 export const config = {
   // Everything except API routes, Next internals, metadata files and static files.
-  matcher: ['/((?!api|_next|models|logos|sitemap.xml|robots.txt|.*\\..*).*)'],
+  matcher: ['/((?!api|_next|models|logos|llm|sitemap.xml|robots.txt|.*\\..*).*)'],
 };
