@@ -39,10 +39,9 @@ export const en = {
     chips: [
       { label: 'This week in agentic AI → PDF brief', prompt: 'Research the most important agentic AI news from the last 7 days and write a one to two page brief as a printable document with a short verdict, three to five developments, why each matters, and sources.' },
       { label: 'Landing page for a Riyadh coffee subscription', prompt: 'Build a complete landing page for "Qahwa Box", a specialty coffee subscription in Riyadh that delivers freshly roasted Saudi and Yemeni beans every two weeks. Real copy in English, pricing with three plans in SAR, a how-it-works section, testimonials, FAQ and a signup call to action.' },
-      { label: 'Your cover letter for McKinsey QuantumBlack', prompt: 'Write your one-page cover letter for the Principal Software Engineer role at QuantumBlack, AI by McKinsey (Riyadh office), in your own voice, using only facts from your profile. Plain, confident, specific. Deliver it as a printable document.' },
       { label: 'Compare top LLM API prices → table + CSV', prompt: 'Search for the current API prices of DeepSeek, OpenAI, Anthropic and Google flagship models (input and output per million tokens). Show a markdown table in chat with the source for each row, and also create a CSV file.' },
-      { label: '30-60-90 day plan for a new tech lead', prompt: 'Write a 30-60-90 day plan for a newly hired tech lead joining a client-facing engineering team at a consulting firm. Two pages, printable, with a table per phase (goals, actions, how success is measured) and a short list of risks.' },
-      { label: 'Why should McKinsey hire you?', prompt: 'Why should McKinsey hire you for a Principal Software Engineer role? Answer in five short bullet points from your profile, then one sentence on how to reach you.' },
+      { label: '30-60-90 day plan for a new tech lead', prompt: 'Write a 30-60-90 day plan for a newly hired tech lead joining a growing product engineering team. Two pages, printable, with a table per phase (goals, actions, how success is measured) and a short list of risks.' },
+      { label: 'Why should we hire you?', prompt: 'Why should a company hire you to lead its engineering? Answer in five short bullet points from your profile, then one sentence on how to reach you.' },
     ],
     nodePrompts: {
       lead: 'Can you lead an engineering team? Answer in four short sentences.',
