@@ -85,7 +85,7 @@ export const en = {
     timeline: [
       { when: '2025 – now', title: 'Senior Software Engineer', org: 'Salla', text: 'Saudi Arabia\'s leading e-commerce platform. I work on the merchant dashboard thousands of merchants use to serve millions of customers, keep it fast, and ship features daily.' },
       { when: '2023 – 2025', title: 'Software Engineer', org: 'National eLearning Center', text: 'Tawakkalna mini apps for 30M users, the FutureX platform app, the Growth app live on both stores in two weeks, and a nomination system for tens of thousands of students.' },
-      { when: '2021 – 2023', title: 'Software Engineer → Lead Software Engineer', org: 'NTIS', text: 'Led seven engineers to build a full-stack secrets management and key generation system, from custom hardware and in-house firmware to the software that runs on top.' },
+      { when: '2021 – 2023', title: 'Software Engineer → Lead Software Engineer', org: 'NTIS', text: 'Led seven engineers to build a full-stack secrets management and encryption system, from custom hardware and in-house firmware to the software that runs on top.' },
       { when: '2021', title: 'Software Engineer', org: 'Nuqtah', text: "Saudi Arabia's first NFT marketplace, multi-chain. Create, buy and sell NFTs." },
       { when: '2020 – 2021', title: '.NET Developer', org: 'Saudi Federation for Cybersecurity, Programming and Drones (SAFCSP)', text: 'Built a proprietary Git server and led 10 developers to build a working clone of the Tawakkalna app.' },
       { when: '2020', title: 'Developer', org: 'Nahdi Medical Company', text: 'React Native e-commerce app with hundreds of thousands of products.' },

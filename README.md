@@ -48,7 +48,7 @@ I built and shipped national digital learning products. I delivered Tawakkalna m
 ### Lead Software Engineer · NTIS
 *Aug 2021 – Sep 2023*
 
-At the National Company of Telecommunications & Information Security, I was promoted from Software Engineer to Lead and led a team of seven engineers, spanning software, hardware, firmware and security, to build a proprietary, full-stack secrets management and key generation system from the ground up. We designed our own custom hardware, wrote its firmware in-house and built the software on top, with security as the first requirement at every layer, so the system keeps highly sensitive secrets and keys safe and is built to resist attack.
+At the National Company of Telecommunications & Information Security, I was promoted from Software Engineer to Lead and led a team of seven engineers, spanning software, hardware, firmware and security, to build a proprietary, full-stack secrets management and encryption system from the ground up. We designed our own custom hardware, wrote its firmware in-house and built the software on top, with security as the first requirement at every layer, so the system keeps highly sensitive secrets safe and is built to resist attack.
 
 ### Software Engineer · Nuqtah
 *Feb 2021 – Aug 2021*
