@@ -142,8 +142,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <div className="try">
           <div><b>{t.tryme.title}</b> {t.tryme.text}</div>
           <div className="cta">
-            <a className="btn btn-sm btn-primary btn-wa" href={wa(t.tryme.waText)} target="_blank" rel="noopener">{t.tryme.wa}</a>
-            <TryAgent label={t.tryme.agent} placeholder={t.agent.challengePlaceholder} />
+            <TryAgent label={t.tryme.agent} />
           </div>
         </div>
       </footer>

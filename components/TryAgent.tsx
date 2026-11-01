@@ -1,19 +1,18 @@
 'use client';
 
-export default function TryAgent({ label, placeholder }: { label: string; placeholder: string }) {
+export default function TryAgent({ label }: { label: string }) {
   return (
     <a
-      className="btn btn-sm"
+      className="btn btn-sm btn-primary"
       href="#ask"
       onClick={(e) => {
         e.preventDefault();
-        const panel = document.getElementById('ask');
+        document.getElementById('ask')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         const input = document.getElementById('agent-input') as HTMLInputElement | null;
-        panel?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        if (input) { input.placeholder = placeholder; setTimeout(() => input.focus({ preventScroll: true }), 700); }
+        if (input) setTimeout(() => input.focus({ preventScroll: true }), 700);
       }}
     >
-      {label}
+      <span className="dot" aria-hidden="true"></span> {label}
     </a>
   );
 }

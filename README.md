@@ -89,6 +89,6 @@ I built Nahdi's e-commerce mobile app in React Native, bringing hundreds of thou
 ---
 
 <p align="center">
-  <b>Try me.</b> Tell me your most pressing tech challenge and let's take it from there.<br />
-  <a href="https://wa.me/966538654514">Message me on WhatsApp</a> · <a href="https://itsyounes.com">Ask my AI agent at itsyounes.com</a>
+  <b>Meet my AI agent.</b> It speaks as me, knows my work, and can research, write a brief or build a table for you.<br />
+  <a href="https://itsyounes.com/en#ask">Ask my AI agent at itsyounes.com</a>
 </p>

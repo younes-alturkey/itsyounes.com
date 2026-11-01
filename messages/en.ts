@@ -33,7 +33,6 @@ export const en = {
     note2: 'nothing is stored',
     clear: 'Clear',
     placeholder: 'Ask for research, a report, a landing page, a table…',
-    challengePlaceholder: 'Describe your most pressing tech challenge…',
     greeting:
       'Hi, I am Younes, or rather my AI agent speaking as me. I can research the web, write a brief or a letter, build a landing page, or put numbers in a table and hand you the file right here. Ask me anything about my work too. Nothing is stored.',
     chips: [
@@ -113,11 +112,9 @@ export const en = {
     call: 'Call +966 53 865 4514',
   },
   tryme: {
-    title: 'Try me.',
-    text: "Tell me your most pressing tech challenge and let's take it from there.",
-    wa: 'Send it on WhatsApp',
-    agent: 'Ask my AI agent first',
-    waText: 'Hi Younes, here is my most pressing tech challenge: ',
+    title: 'Meet my AI agent.',
+    text: 'It speaks as me, knows my work, and can research, write a brief or build a table for you, right here.',
+    agent: 'Ask my AI agent',
   },
   hud: {
     lvl: 'LVL 31',
