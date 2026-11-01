@@ -145,6 +145,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
             <TryAgent label={t.tryme.agent} />
           </div>
         </div>
+        <p className="foot-note">{t.tryme.note}</p>
       </footer>
     </>
   );

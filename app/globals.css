@@ -198,6 +198,7 @@ section{padding:72px 0}
 .try{max-width:var(--max);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--panel);font-size:14px;color:var(--mute)}
 .try b{color:var(--ink);font-weight:650;margin-right:4px}
 .try .cta{margin:0;gap:8px}
+.foot-note{max-width:var(--max);margin:12px auto 0;text-align:center;font-size:13px;color:var(--dim)}
 @media (max-width:640px){.try{justify-content:center;text-align:center}}
 
 /* markdown in messages */

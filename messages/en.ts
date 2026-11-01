@@ -115,6 +115,7 @@ export const en = {
     title: 'Meet my AI agent.',
     text: 'It speaks as me, knows my work, and can research, write a brief or build a table for you, right here.',
     agent: 'Ask my AI agent',
+    note: "Kindly note, I'm not open to freelance or contract work at all.",
   },
   hud: {
     lvl: 'LVL 31',
