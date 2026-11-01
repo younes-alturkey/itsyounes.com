@@ -3,7 +3,7 @@
 export default function TryAgent({ label }: { label: string }) {
   return (
     <a
-      className="btn btn-sm btn-primary"
+      className="btn btn-sm"
       href="#ask"
       onClick={(e) => {
         e.preventDefault();
@@ -12,7 +12,7 @@ export default function TryAgent({ label }: { label: string }) {
         if (input) setTimeout(() => input.focus({ preventScroll: true }), 700);
       }}
     >
-      <span className="dot" aria-hidden="true"></span> {label}
+      {label}
     </a>
   );
 }
