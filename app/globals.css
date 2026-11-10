@@ -297,4 +297,6 @@ main>section>*{pointer-events:auto}
 
 /* CV link: visible on every width, same weight as the nav links */
 .cv-link{color:var(--ink)}
+.cl-link{display:none}
+@media (min-width:640px){.top .cl-link{display:inline}}
 @media (max-width:639px){.top .cv-link{margin-inline-start:auto}.top .cv-link+.lang{margin-inline-start:0}}

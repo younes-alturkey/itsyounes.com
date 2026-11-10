@@ -44,6 +44,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <a href="#contact">{t.nav.contact}</a>
         </nav>
         <a className="lang cv-link" href="/Younes-Alturkey-CV.pdf" target="_blank" rel="noopener" type="application/pdf">{t.nav.cv}</a>
+        <a className="lang cl-link" href="/Younes-Alturkey-Cover-Letter.pdf" target="_blank" rel="noopener" type="application/pdf">{t.nav.coverLetter}</a>
         <Link className="lang" href={`/${t.otherLocale}`} hrefLang={t.otherLocale} lang={t.otherLocale}>{t.otherLabel}</Link>
         <a className="btn btn-sm btn-wa" href={waIntro} target="_blank" rel="noopener"><WhatsAppIcon /> {t.nav.whatsapp}</a>
       </header>

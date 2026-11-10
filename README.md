@@ -15,7 +15,8 @@
   <a href="mailto:alturkeyy@gmail.com">alturkeyy@gmail.com</a> ·
   <a href="https://www.linkedin.com/in/younes-alturkey/">LinkedIn</a> ·
   <a href="https://github.com/younes-alturkey">GitHub</a> ·
-  <a href="https://itsyounes.com/Younes-Alturkey-CV.pdf"><b>CV (PDF)</b></a>
+  <a href="https://itsyounes.com/Younes-Alturkey-CV.pdf"><b>CV (PDF)</b></a> ·
+  <a href="https://itsyounes.com/Younes-Alturkey-Cover-Letter.pdf"><b>Cover letter (PDF)</b></a>
 </p>
 
 ---

@@ -8,7 +8,7 @@ export const en = {
     description:
       'Younes Alturkey, computer scientist with 10 years of experience. Leads engineering teams and builds AI agents that get real work done. Open to Engineering Manager, Tech Lead, Principal, Staff, Head of Engineering, Founding Engineer and Tech Co-founder roles in Riyadh.',
   },
-  nav: { ask: 'Ask', track: 'Track record', contact: 'Contact', cv: 'CV', whatsapp: 'WhatsApp' },
+  nav: { ask: 'Ask', track: 'Track record', contact: 'Contact', cv: 'CV', coverLetter: 'Cover letter', whatsapp: 'WhatsApp' },
   hero: {
     name: 'Younes Alturkey',
     sub: 'Riyadh, Saudi Arabia',

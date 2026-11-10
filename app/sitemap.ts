@@ -9,5 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: abs('/ar'), lastModified: now, changeFrequency: 'monthly', priority: 0.9, alternates: { languages } },
     { url: abs('/llms.txt'), lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: abs('/Younes-Alturkey-CV.pdf'), lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+    { url: abs('/Younes-Alturkey-Cover-Letter.pdf'), lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
   ];
 }
