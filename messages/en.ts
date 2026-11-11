@@ -104,6 +104,7 @@ export const en = {
     cta: 'Website',
     url: 'https://younes-alturkey.github.io/wolffish',
     github: 'https://github.com/younes-alturkey/wolffish',
+    onePager: 'One-pager (PDF)',
   },
   contact: {
     title: "Let's talk",

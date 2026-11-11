@@ -117,6 +117,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <span className="best-links">
                 <a href={t.best.url} target="_blank" rel="noopener">{t.best.cta} ↗</a>
                 <a href={t.best.github} target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="/Wolffish-One-Pager.pdf" target="_blank" rel="noopener" type="application/pdf">{t.best.onePager} ↗</a>
               </span>
             </div>
             <p>{t.best.text}</p>

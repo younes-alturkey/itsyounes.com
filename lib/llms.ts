@@ -67,6 +67,7 @@ Coursework: artificial intelligence, cyber security, operating systems, database
 
 - Website: https://younes-alturkey.github.io/wolffish
 - Code: https://github.com/younes-alturkey/wolffish (MIT license)
+- One-pager (PDF): https://itsyounes.com/Wolffish-One-Pager.pdf
 
 A battle-tested agentic AI harness that does the work and does not give up: it plans, uses tools, checks its own results and finishes the job. It runs on Windows, macOS and Linux, on Android and iOS, as browser extensions, and on a PC, laptop or VPS server, with a web UI and support for many AI providers. Used by tens of people.
 
