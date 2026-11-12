@@ -105,6 +105,14 @@ export const en = {
     url: 'https://younes-alturkey.github.io/wolffish',
     github: 'https://github.com/younes-alturkey/wolffish',
     onePager: 'One-pager (PDF)',
+    docs: [
+      { file: 'Bachelor', title: "Bachelor's degree", meta: 'Computer Science' },
+      { file: 'IELTS', title: 'IELTS 7.5', meta: 'English certificate' },
+      { file: 'Tuwaiq', title: 'Tuwaiq Academy', meta: 'Bootcamp certificate' },
+      { file: 'Best-Code', title: 'Best Code', meta: 'Programming contest award' },
+      { file: 'Dr-Asif-Letter', title: 'Dr. Asif', meta: 'Recommendation letter' },
+      { file: 'Dr-Vijey-Letter', title: 'Dr. Vijey', meta: 'Recommendation letter' },
+    ],
   },
   contact: {
     title: "Let's talk",

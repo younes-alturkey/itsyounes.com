@@ -123,6 +123,18 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
             <p>{t.best.text}</p>
             <ul>{t.best.points.map((x) => <li key={x}>{x}</li>)}</ul>
           </article>
+          <div className="docs">
+            {t.best.docs.map((d) => (
+              <a key={d.file} className="doc" href={`/Younes-Alturkey-${d.file}.pdf`} target="_blank" rel="noopener" type="application/pdf">
+                <svg className="doc-icon" viewBox="0 0 32 40" aria-hidden>
+                  <path d="M4 1h17l10 10v25a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z" fill="rgba(255,90,90,.12)" stroke="#ff6b6b" strokeWidth="1.5"/>
+                  <path d="M21 1v8a2 2 0 0 0 2 2h8" fill="none" stroke="#ff6b6b" strokeWidth="1.5"/>
+                  <text x="16" y="30" textAnchor="middle" fontSize="8.5" fontWeight="700" fill="#ff8a8a" fontFamily="system-ui,sans-serif">PDF</text>
+                </svg>
+                <span className="doc-text"><b>{d.title}</b><span>{d.meta}</span></span>
+              </a>
+            ))}
+          </div>
         </section>
 
         <section id="contact" className="contact">
