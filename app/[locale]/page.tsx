@@ -123,6 +123,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
             <p>{t.best.text}</p>
             <ul>{t.best.points.map((x) => <li key={x}>{x}</li>)}</ul>
           </article>
+          <h3 className="sub">{t.best.docsTitle}</h3>
           <div className="docs">
             {t.best.docs.map((d) => (
               <a key={d.file} className="doc" href={`/Younes-Alturkey-${d.file}.pdf`} target="_blank" rel="noopener" type="application/pdf">

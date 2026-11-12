@@ -105,6 +105,7 @@ export const ar = {
     url: 'https://younes-alturkey.github.io/wolffish',
     github: 'https://github.com/younes-alturkey/wolffish',
     onePager: 'ملخص (PDF)',
+    docsTitle: 'الشهادات والتوصيات',
     docs: [
       { file: 'Bachelor', title: 'شهادة البكالوريوس', meta: 'علوم الحاسب' },
       { file: 'IELTS', title: 'IELTS 7.5', meta: 'شهادة اللغة الإنجليزية' },

@@ -105,6 +105,7 @@ export const en = {
     url: 'https://younes-alturkey.github.io/wolffish',
     github: 'https://github.com/younes-alturkey/wolffish',
     onePager: 'One-pager (PDF)',
+    docsTitle: 'Credentials and recommendations',
     docs: [
       { file: 'Bachelor', title: "Bachelor's degree", meta: 'Computer Science' },
       { file: 'IELTS', title: 'IELTS 7.5', meta: 'English certificate' },
