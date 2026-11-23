@@ -617,7 +617,9 @@ function step(dt) {
   islands.forEach((is) => { is.g.position.y = is.y + Math.sin(t * is.k + is.p) * 0.4; is.g.rotation.y += dt * 0.02; });
   sky.rotation.y += dt * 0.004;
 
-  if (hud) hud.classList.toggle('on', S.intro > 0.55 && S.fade > 0.6);
+  // On phones the HUD sits where the hero text scrolls, so it leaves on the first scroll and returns at the top.
+  const hudClear = innerWidth >= 768 || scrollY <= 4;
+  if (hud) hud.classList.toggle('on', S.intro > 0.55 && S.fade > 0.6 && hudClear);
 }
 
 const LABEL_DOWN = new THREE.Vector3(0, -0.62, 0);
