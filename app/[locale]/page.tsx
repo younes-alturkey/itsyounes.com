@@ -25,6 +25,13 @@ const WhatsAppIcon = () => (
   <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.1.6 2.8.5a2.4 2.4 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c0-.1-.2-.2-.5-.3Z" /></svg>
 );
 
+const PdfIcon = () => (
+  <svg viewBox="0 0 32 40" width="12" height="15" aria-hidden="true">
+    <path d="M4 1h17l10 10v25a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z" fill="rgba(255,90,90,.12)" stroke="#ff6b6b" strokeWidth="2.5"/>
+    <path d="M21 1v8a2 2 0 0 0 2 2h8" fill="none" stroke="#ff6b6b" strokeWidth="2.5"/>
+  </svg>
+);
+
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
@@ -45,6 +52,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         </nav>
         <a className="lang cv-link" href="/Younes-Alturkey-CV.pdf" target="_blank" rel="noopener" type="application/pdf">{t.nav.cv}</a>
         <a className="lang cl-link" href="/Younes-Alturkey-Cover-Letter.pdf" target="_blank" rel="noopener" type="application/pdf">{t.nav.coverLetter}</a>
+        <a className="lang cl-link" href="/Younes-Alturkey-Best-Works.pdf" target="_blank" rel="noopener" type="application/pdf">{t.nav.bestWorks}</a>
         <Link className="lang" href={`/${t.otherLocale}`} hrefLang={t.otherLocale} lang={t.otherLocale}>{t.otherLabel}</Link>
         <a className="btn btn-sm btn-wa" href={waIntro} target="_blank" rel="noopener"><WhatsAppIcon /> {t.nav.whatsapp}</a>
       </header>
@@ -59,6 +67,10 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <p className="roles">{t.hero.roles}</p>
           <h1>{t.hero.h1}</h1>
           <p className="lede">{t.hero.lede}</p>
+          <div className="pdf-chips">
+            <a className="pdf-chip" href="/Younes-Alturkey-Cover-Letter.pdf" target="_blank" rel="noopener" type="application/pdf"><PdfIcon /> {t.nav.coverLetter}</a>
+            <a className="pdf-chip" href="/Younes-Alturkey-Best-Works.pdf" target="_blank" rel="noopener" type="application/pdf"><PdfIcon /> {t.nav.bestWorks}</a>
+          </div>
           <div className="cta">
             <a className="btn btn-primary btn-wa" href={waIntro} target="_blank" rel="noopener">{t.hero.wa}</a>
             <a className="btn" href={`mailto:${EMAIL}`}>{t.hero.email}</a>

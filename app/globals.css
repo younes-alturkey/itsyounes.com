@@ -298,8 +298,15 @@ main>section>*{pointer-events:auto}
 /* CV link: visible on every width, same weight as the nav links */
 .cv-link{color:var(--ink)}
 .cl-link{display:none}
-@media (min-width:640px){.top .cl-link{display:inline}}
+@media (min-width:860px){.top .cl-link{display:inline}}
 @media (max-width:639px){.top .cv-link{margin-inline-start:auto}.top .cv-link+.lang{margin-inline-start:0}}
+
+/* small screens only: the PDFs the header has no room for (cover letter, best works) as chips under the bio */
+.pdf-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pdf-chip{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,107,107,.35);background:rgba(255,90,90,.08);color:var(--ink);font-size:13px;font-weight:550;line-height:1.2;text-decoration:none;-webkit-tap-highlight-color:transparent}
+.pdf-chip svg{flex:none}
+.pdf-chip:hover,.pdf-chip:focus-visible{border-color:rgba(255,107,107,.6);outline:none}
+@media (min-width:860px){.pdf-chips{display:none}}
 
 /* best work documents: 3 x 2 on desktop, 2 cols with smaller cards on mobile */
 .docs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}

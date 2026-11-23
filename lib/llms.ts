@@ -18,6 +18,7 @@ This file is Younes Alturkey's complete CV in plain text, written for large lang
 - X: https://x.com/younes_alturkey
 - CV (one-page PDF): https://itsyounes.com/Younes-Alturkey-CV.pdf
 - Cover letter (PDF): https://itsyounes.com/Younes-Alturkey-Cover-Letter.pdf
+- Best works (PDF): https://itsyounes.com/Younes-Alturkey-Best-Works.pdf
 - Location: Riyadh, Saudi Arabia
 
 ## Summary
@@ -117,6 +118,7 @@ Direct, plain English, no hype. Loves what he does. Hands-on: architects the sol
 - [Portfolio (Arabic)](https://itsyounes.com/ar)
 - [CV PDF](https://itsyounes.com/Younes-Alturkey-CV.pdf): one-page ATS CV.
 - [Cover letter PDF](https://itsyounes.com/Younes-Alturkey-Cover-Letter.pdf): cover letter for engineering leadership roles.
+- [Best works PDF](https://itsyounes.com/Younes-Alturkey-Best-Works.pdf): 11 selected projects with screenshots, in plain English.
 - [Wolffish](https://younes-alturkey.github.io/wolffish): open-source agentic AI harness.
 - [GitHub](https://github.com/younes-alturkey)
 - [LinkedIn](https://www.linkedin.com/in/younes-alturkey/)
