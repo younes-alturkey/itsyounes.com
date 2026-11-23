@@ -414,7 +414,11 @@ on(window, 'pointerup', (e) => {
 on(window, 'scroll', () => {
   const max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
   S.scroll = clamp(scrollY / max, 0, 1);
-  S.fade = clamp(1 - (scrollY - innerHeight * 0.55) / (innerHeight * 0.45), 0.38, 1);
+  // The scene dims as the page scrolls. On phones the hero text scrolls straight over the scene,
+  // so the dim starts with the first pixel of scroll there; on wider screens it waits until the hero has passed.
+  const phone = innerWidth < 768;
+  const fadeStart = innerHeight * (phone ? 0 : 0.55), fadeSpan = innerHeight * (phone ? 0.13 : 0.45);
+  S.fade = clamp(1 - (scrollY - fadeStart) / fadeSpan, 0.38, 1);
   requestRender();
 }, { passive: true });
 
